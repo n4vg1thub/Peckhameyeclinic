@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peckham Eye Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #007FFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            font-size: 1.8em;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .hero {
+            background-color: #d9eaf3;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        section {
+            padding: 30px 0;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #007FFF;
+            margin-bottom: 20px;
+        }
+
+        .lens {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .lens h3 {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .lens p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 0 10%;
+        }
+
+        .lens a {
+            display: inline-block;
+            background: linear-gradient(45deg, #007FFF, #00BFFF);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .lens a:hover {
+            background: linear-gradient(45deg, #00BFFF, #007FFF);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background-color: #007FFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Peckham Eye Clinic Logo">
+            <h1>Peckham Eye Clinic</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>See the World Clearly</h2>
+        </div>
+    </section>
+    <section class="lenses" id="lenses">
+        <div class="container">
+            <h2>Our Lenses</h2>
+            <div class="lens">
+                <h3><a href="single-vision.html">Single Vision Lenses</a></h3>
+                <p>Perfect for daily wear, providing clear vision at all distances.</p>
+            </div>
+            <div class="lens">
+                <h3><a href="bifocal.html">Bifocal Lenses</a></h3>
+                <p>Ideal for those needing assistance with both near and far vision.</p>
+            </div>
+            <div class="lens">
+                <h3><a href="progressive.html">Progressive Lenses</a></h3>
+                <p>Seamless vision correction for distance, intermediate, and near.</p>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best quality lenses to help you see the world clearly. With a wide range of options to suit every need, we are your trusted optician for all your vision requirements.</p>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions? Reach out to us! We are here to help you find the perfect lenses for your needs. Contact us at (123) 456-7890 or email us at info@peckhameyeclinic.com.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Peckham Eye Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

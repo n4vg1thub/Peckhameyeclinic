@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Lenses - Peckham Eye Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+        }
+
+        header {
+            background-color: #007FFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            display: inline;
+            font-size: 1.8em;
+            margin-left: 180px;
+            vertical-align: middle;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        .hero {
+            background-color: #d9eaf3;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        section {
+            padding: 30px 0;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 1.8em;
+            color: #007FFF;
+            margin-bottom: 20px;
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tabs button {
+            background: linear-gradient(45deg, #007FFF, #00BFFF);
+            color: white;
+            border: none;
+            padding: 15px 30px; /* slightly bigger buttons */
+            border-radius: 25px;
+            margin: 0 10px; /* increased margin */
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tabs button:hover {
+            background: linear-gradient(45deg, #00BFFF, #007FFF);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .tab-content {
+            display: none;
+            text-align: center;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-content img {
+            width: 80%;
+            max-width: 600px;
+            margin: 20px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #007FFF;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logo.png" alt="Peckham Eye Clinic Logo">
+            <h1>Peckham Eye Clinic</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h2>Progressive Lenses</h2>
+        </div>
+    </section>
+    <section class="tabs">
+        <button onclick="openTab('tab1')" id="tab1btn">Standard</button>
+        <button onclick="openTab('tab2')" id="tab2btn">Premium</button>
+        <button onclick="openTab('tab3')" id="tab3btn">Advanced</button>
+        <button onclick="openTab('tab4')" id="tab4btn">Individual</button>
+    </section>
+    <section class="tab-content" id="tab1">
+        <h2>Standard Lenses</h2>
+        <p>Standard lenses provide basic progressive vision correction.</p>
+        <img src="standard.png" alt="Standard Progressive Lens">
+    </section>
+    <section class="tab-content" id="tab2">
+        <h2>Premium Lenses</h2>
+        <p>Premium lenses offer enhanced features for better vision quality.</p>
+        <img src="premium.png" alt="Premium Progressive Lens">
+    </section>
+    <section class="tab-content" id="tab3">
+        <h2>Advanced Lenses</h2>
+        <p>Advanced lenses incorporate cutting-edge technology for optimal vision.</p>
+        <img src="advanced.png" alt="Advanced Progressive Lens">
+    </section>
+    <section class="tab-content" id="tab4">
+        <h2>Individualized Lenses</h2>
+        <p>Individualized lenses are custom-made to suit unique vision needs.</p>
+        <img src="individual.png" alt="Individualized Progressive Lens">
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Peckham Eye Clinic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
